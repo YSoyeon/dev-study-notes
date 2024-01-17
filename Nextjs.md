@@ -19,7 +19,7 @@ Next.js가 버전 13으로 업데이트되면서 기존의 pages 디렉터리 �
 /page/post.tsx 👉 http://localhost:3000/post
 ```
 
-기존에는 page 폴더에서 웹사이트의 페이지 컴포넌트를 처리했다.
+📍 기존에는 page 폴더에서 웹사이트의 페이지 컴포넌트를 처리했다.
 
 #### <span style="color:#7066F2">App 라우터</span>
 
@@ -27,9 +27,12 @@ Next.js가 버전 13으로 업데이트되면서 기존의 pages 디렉터리 �
 /app/post/page.tsx 👉 http://localhost:3000/post
 ```
 
-App라우터는 폴더 내에 page 컴포넌트를 작성하면 해당 폴더명으로 라우팅이 이뤄진다.
+📍 App라우터는 폴더 내에 page 컴포넌트를 작성하면 해당 폴더명으로 라우팅이 이뤄진다.
 
-또한, 같은 폴더 내에 layout 파일을 정의하여 여러 페이지 간에 UI를 공유할 수 있다. <br />
+📍 또한, 같은 폴더 내에 layout 파일을 정의하여 여러 페이지 간에 UI를 공유할 수 있다. <br />
+
+📍 app 폴더 구조를 사용하면 특정 라우트 하위에서 공통 레이아웃을 구성할 수 있다. (13이전 버전에서는 불가능해서 코드를 중복작성했어야 했다.)<br />
+레이아웃을 공유하는 페이지를 탐색할 때 레이아웃이 리렌더링되지 않는다. (불필요한 렌더링이 줄어 웹 성능이 향상됨)
 
 ☀️ app directory내부에서는 모든 컴포넌트가 기본적으로 서버컴포넌트로 동작한다 ☀️
 <br />
@@ -59,7 +62,11 @@ data fetch 등을 수행할 때 반드시 getServerSideProps(또는 getStaticPro
 
 **Next 13에서는**
 
-기본적으로 서버 컴포넌트(RSC)로 동작하기 때문에 컴포넌트 자체가 서버에서 렌더링되기 때문에 컴포넌트 내부에서 fetch를 실행하면 된다.
+기본적으로 서버 컴포넌트(RSC)로 동작하기 때문에 컴포넌트 자체가 서버에서 렌더링되기 때문에 컴포넌트 내부에서 🌟fetch를 실행하면 된다.
+
+**🌟 fetch 🌟**
+
+Next13의 fetch 함수는 cache 옵션과 next 옵션을 줘서 SSR, ISR, SSG 와 같은 통신을 구현할 수 있다.
 
 ### <span style="color:#F266AA">그 외 변화들</span>
 
@@ -83,3 +90,7 @@ version 12에서 실험적인 옵션으로 추가되었었는데 13버전부터 
 ## 참고
 
 - [Next) 서버 컴포넌트(React Server Component)에 대한 고찰](https://velog.io/@2ast/React-%EC%84%9C%EB%B2%84-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8React-Server-Component%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B3%A0%EC%B0%B0#next13%EA%B3%BC-server-component)
+
+- [[Next.js 13] pages -> app directory 리펙토링](https://velog.io/@hyunjoong/Next.js-13-pages-app-directory-%EB%A6%AC%ED%8E%99%ED%86%A0%EB%A7%81#1-nested-routes--layouts)
+
+- [Should You Use Next.js Pages or App Directory?](https://medium.com/@CraftedX/should-you-use-next-js-pages-or-app-directory-38e803fe5cb4)
