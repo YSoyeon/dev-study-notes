@@ -7,6 +7,11 @@
   ([\*oauth](oauth.md))
 - Nextjs와 serverless를 지원하기 위해 설계되었다. 하지만 AWS Lambda, Docker, Heroku 등 어떤 환경에서든 유연하게 사용할 수 있다.
 
+## Next Auth를 사용하는 이유
+
+- 사용이 쉽다.
+- 인증을 위한 다양한 provider 제공
+
 ## install
 
 ```
