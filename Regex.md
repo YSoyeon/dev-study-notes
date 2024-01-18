@@ -25,4 +25,13 @@
 - `\B` : 문자열의 연속이 되는 패턴 매칭
   - ex) `ice\B` <br />
     'I add ice to icecream' 👉 'icecream' ✅ / 'ice' ❌
-- `^` : 문자열의 시작
+- `\` : 이스케이프용 문자
+
+  - ex) \^ 👉 ^
+  - ex) \/ 👉 /
+
+- `\d` : 모든 숫자를 매칭. [0-9] 와 동일한 의미.
+
+## 참고
+
+- [Regex Test](https://regexr.com/)
