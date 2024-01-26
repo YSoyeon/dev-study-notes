@@ -5,7 +5,7 @@
 <span style="color:#E6574C"></span>
 
 페이지 기반의 라우팅 및 서버 사이드 렌더링(SSR), 정적 사이트 생성(SSG) 등을 지원하여 개발자들이 빠르고 효율적으로 웹 애플리케이션을 구축할 수 있도록 도와준다.
-([\*SSR&SSG](SSR&SSG.md))
+([\*SSR&SSG](../SSR&SSG.md))
 
 ## Next.js version 13
 
