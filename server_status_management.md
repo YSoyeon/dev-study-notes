@@ -14,9 +14,13 @@
 
 위와 같은 전략을 가진다.
 
+👉 즉, 빠르게 캐시 데이터로 렌더링하고(우선순위👆), 최신의 데이터를 가져온다.
+
 #### ☀️ `react-query`
 
 react 앱에서 서버 상태를 가져오고 캐싱하고 동기화하고 업데이트하는 것을 쉽게 해준다.
+
+👉 즉, API 호출로 받아온 데이터를 쉽게 관리할 수 있도록 지원해주는 라이브러리다.
 
 ### 예제
 
@@ -82,7 +86,7 @@ const TodoList = () => {
 
 #### DevTools
 
-- 🌹 `SWR` : 비공식적으로 `swr-devtools` 라는 라이브러리가 존재
+- 🌹 `SWR` : 2.0부터 제공
 - ☀️ `react-query` : 자체 제공
 
 #### Lagged Query Data
@@ -101,3 +105,7 @@ const TodoList = () => {
 - ☀️ `react-query` : MINIFIED + GZIPPED된 값이 대략 13kB
 
 react-query가 지원하는 기능이 많은 만큼 라이브러리 크기가 무겁다.
+
+## 참고
+
+[SWR vs React Query](https://yanggoon.dev/showcase/swr-query)
