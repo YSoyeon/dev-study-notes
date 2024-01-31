@@ -87,6 +87,10 @@ version 12에서 실험적인 옵션으로 추가되었었는데 13버전부터 
 이전에는 font를 최적화하기 위해 인라인 css 속성을 주었었다.
 버전 13부터는 `next/font` 모듈이 추가되어서 이를 사용해서 폰트를 최적화하고 커스터마이징 할 수 있다.
 
+#### <span style="color:#7066F2">turbopack</span>
+
+Rust기반으로 만들어진 webpack보다 최대 700배 빠른 번들러
+
 ## 참고
 
 - [Next) 서버 컴포넌트(React Server Component)에 대한 고찰](https://velog.io/@2ast/React-%EC%84%9C%EB%B2%84-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8React-Server-Component%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B3%A0%EC%B0%B0#next13%EA%B3%BC-server-component)

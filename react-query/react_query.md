@@ -16,3 +16,6 @@
 ## 참고
 
 [TanStack Query v5 정식 버전 살펴보기](<https://www.moonkorea.dev/React-TanStack-Query-v5-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0-(%EB%A6%AC%EC%95%A1%ED%8A%B8%EC%BF%BC%EB%A6%AC)#usemutationstate%EB%A1%9C-mutation-%EC%83%81%ED%83%9C-%EA%B3%B5%EC%9C%A0>)
+
+[Inside React Query
+](https://tkdodo.eu/blog/inside-react-query)
