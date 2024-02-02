@@ -54,6 +54,10 @@ Next.js가 버전 13으로 업데이트되면서 기존의 pages 디렉터리 �
 - 브라우저 전용 API 사용 👉 <span style="color:#38C2F5">RCC</span>
 - 상태 관리 메서드, 라이프 사이클 메서드, custom Hook 사용 (ex. useState, useEffect...) 👉 <span style="color:#38C2F5">RCC</span>
 
+사용패턴
+
+- 서버 컴포넌트를 클라이언트 컴포넌트의 children으로 넘겨주는 식으로 사용하는 것을 추천한다. (import 하는것 X)
+
 ### <span style="color:#F266AA">getServerSideProps 👉 getStaticProps(App Directory)</span>
 
 **기존에는 (Next13 이전)**
